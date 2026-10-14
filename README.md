@@ -11,7 +11,7 @@ and manages accounts.
 | Layer | Repository | What it holds |
 |---|---|---|
 | Agent | `noemeo-photo` | LangGraph agents (scoring, comparison, keywords, conversational workspace) behind a local FastAPI server and a Lightroom plugin; research studies on public benchmarks (AVA, ArtBench) |
-| Agent kit | `noemeo-agent-kit` | Product-agnostic driver toolkit: pluggable LLM transport, structured output, token usage, prompt hashing, logging |
+| Agent kit | [`noemeo-agent-kit`](https://github.com/ilya-at-noemeo/noemeo-agent-kit) (public) | Product-agnostic driver toolkit: pluggable LLM transport, structured output, token usage, prompt hashing, logging |
 | Photo infrastructure | `noemeo-photo-infra` | Terraform `photo-api`: Lambda chat proxy to models on AWS Bedrock, Cognito-gated activation keys, usage metering, guardrails |
 | Shared platform | `noemeo-infra` | Identity (Cognito), networking, generic GPU inference |
 | IAM | `noemeo-iam` | Least-privilege deploy roles, GitHub Actions OIDC trust, environment separation |
